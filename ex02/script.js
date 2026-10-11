@@ -2,10 +2,25 @@ const title = document.getElementById("title");
 const description = document.querySelector(".description");
 const box = document.querySelector("#box");
 
-title.textContent = "Hello from JavaScript";
-description.textContent = "This text was changed by script.js";
+const changeTextBtn = document.getElementById("change-text");
+const changeStyleBtn = document.getElementById("change-style");
+const addClassBtn = document.getElementById("add-class");
+const removeClassBtn = document.getElementById("remove-class");
 
-title.style.color = "darkblue";
-title.style.backgroundColor = "lightgray";
+changeTextBtn.addEventListener("click", function () {
+  title.textContent = "Hello from JavaScript";
+  description.textContent = "This text was changed live!";
+});
 
-box.classList.add("active");
+changeStyleBtn.addEventListener("click", function () {
+  title.style.color = "darkblue";
+  title.style.backgroundColor = "lightgray";
+});
+
+addClassBtn.addEventListener("click", function () {
+  box.classList.add("active");
+});
+
+removeClassBtn.addEventListener("click", function () {
+  box.classList.remove("active");
+});
