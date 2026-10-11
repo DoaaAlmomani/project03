@@ -1,0 +1,11 @@
+.box {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+.active {
+  background-color: gold;
+  border-color: orange;
+  font-weight: bold;
+}
