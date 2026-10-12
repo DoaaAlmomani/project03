@@ -15,6 +15,7 @@ changeTextBtn.addEventListener("click", function () {
 changeStyleBtn.addEventListener("click", function () {
   title.style.color = "darkblue";
   title.style.backgroundColor = "lightgray";
+  title.style.display= "inline-block";
 });
 
 addClassBtn.addEventListener("click", function () {
